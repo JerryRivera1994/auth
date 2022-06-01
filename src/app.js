@@ -1,6 +1,6 @@
 const { response } = require('express');
 const express = require('express');
-const morgan = require('morgan')
+const morgan = require('morgan');
 
 const {createRoles} = require('./libs/initialSetup')
 
@@ -29,16 +29,5 @@ app.get('/',(req,res)=>{
 const jsonParser = bodyParser.json()
 
 app.use('/api',jsonParser,authRoutes);
-
-
-
-
-
-
-
-
-
-
-
 
 module.exports.app = app;

@@ -44,6 +44,6 @@ module.exports.signIn = async (req,res) =>{
     })
 
     res.json({token})
-
 }
+
 
